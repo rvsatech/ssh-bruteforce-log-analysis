@@ -1,0 +1,31 @@
+=== 0. Ambiente ===
+Host: kali
+IP:   10.0.2.15 fd17:625c:f037:2:a184:4ebc:2243:54ac 
+Data: Tue Oct 27 09:54:47 PM EDT 2026
+
+=== Pre-requisito: servico SSH ===
+SSH ativo. Prosseguindo com a analise.
+
+=== 1. Total de tentativas falhadas ===
+24
+
+=== 2. IPs de origem (contagem) ===
+     24 from 127.0.0.1
+
+=== 3. Usuarios alvo (contagem) ===
+     24 user admin
+
+=== 4. Houve login bem-sucedido? ===
+Nenhum acesso bem-sucedido.
+
+=== 5. Amostra das ultimas linhas de falha ===
+Oct 27 19:54:31 kali sshd-session[720672]: Failed password for invalid user admin from 127.0.0.1 port 56750 ssh2
+Oct 27 19:54:31 kali sshd-session[720670]: Failed password for invalid user admin from 127.0.0.1 port 56712 ssh2
+Oct 27 19:54:33 kali sshd-session[720672]: Failed password for invalid user admin from 127.0.0.1 port 56750 ssh2
+Oct 27 19:54:33 kali sshd-session[720670]: Failed password for invalid user admin from 127.0.0.1 port 56712 ssh2
+Oct 27 21:35:51 kali sshd-session[29456]: Failed password for invalid user admin from 127.0.0.1 port 51458 ssh2
+Oct 27 21:35:51 kali sshd-session[29457]: Failed password for invalid user admin from 127.0.0.1 port 51472 ssh2
+Oct 27 21:35:51 kali sshd-session[29455]: Failed password for invalid user admin from 127.0.0.1 port 51436 ssh2
+Oct 27 21:35:51 kali sshd-session[29454]: Failed password for invalid user admin from 127.0.0.1 port 51438 ssh2
+Oct 27 21:35:53 kali sshd-session[29454]: Failed password for invalid user admin from 127.0.0.1 port 51438 ssh2
+Oct 27 21:35:53 kali sshd-session[29456]: Failed password for invalid user admin from 127.0.0.1 port 51458 ssh2
