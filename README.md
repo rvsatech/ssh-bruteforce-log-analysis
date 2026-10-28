@@ -10,13 +10,17 @@ gerado de forma controlada contra a própria máquina (127.0.0.1), apenas para
 fins de estudo. Objetivo e critério de aceite em `docs/escopo.md`.
 
 ## Como reproduzir
+Execute os comandos a partir da **raiz do projeto** (a pasta do repositório clonado).
+
 Pré-requisitos: Kali Linux, servidor OpenSSH ativo e Hydra (já incluído no Kali).
 
 1. Ative o servidor SSH: `sudo systemctl enable --now ssh`
 2. Gere o cenário de ataque (controlado, contra a própria máquina):
    `hydra -l admin -P pass-list.txt ssh://127.0.0.1 -t 4`
-3. Execute a análise dos logs: `sudo ./scripts/analise-logs.sh`
-4. Compare o resultado com as conclusões em `relatorio/relatorio.md`
+3. Dê permissão de execução ao script (só na primeira vez):
+   `chmod +x scripts/analise-logs.sh`
+4. Execute a análise dos logs: `sudo ./scripts/analise-logs.sh`
+5. Compare o resultado com as conclusões em `relatorio/relatorio.md`
 
 ## Resultado
 Ataque de força bruta automatizado detectado contra o usuário `admin`
